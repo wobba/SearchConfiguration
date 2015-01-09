@@ -1,4 +1,4 @@
-# SearchConfiguration
+# SharePoint Sample Search Configurations
 SharePoint Sample Search Configurations for boosting managed metedata in search results.
 
 Any column which is of type managed metadata in SharePoint will get it's
