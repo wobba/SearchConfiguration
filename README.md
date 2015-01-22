@@ -1,16 +1,18 @@
 # SharePoint Sample Search Configurations
-SharePoint Sample Search Configurations for boosting managed metedata in search results.
+SharePoint Sample Search Configurations
 
+   - <i>TagBoost-Max-SearchConfiguration.xml</i> - Boost equal to Title
+   - <i>TagBoost-Medium-SearchConfiguration.xml</i> - Boost equal to SocialTag
+   - <i>TagBoost-Low-SearchConfiguration.xml</i> - Boost equal to Body
+   - <i>CrawlTimeSchema.xml</i> - Add CrawlTime managed property to see when an item was last crawled
+
+## Description
 Any column which is of type managed metadata in SharePoint will get it's
 values boosted with this search schema update.
 
 For a detailed description of when and how to use these files check out [How to: Boost metadata in SharePoint search results]
 
 [How to: Boost metadata in SharePoint search results]:http://techmikael.blogspot.com/2015/01/how-to-boost-metadata-in-sharepoint.html.
-
-   - <i>TagBoost-Max-SearchConfiguration.xml</i> - Boost equal to Title
-   - <i>TagBoost-Medium-SearchConfiguration.xml</i> - Boost equal to SocialTag
-   - <i>TagBoost-Low-SearchConfiguration.xml</i> - Boost equal to Body
 
 ### Technical implementation
 The search configuration file is creating a new managed property named <b>TagBoost</b>, mapping the catch-all crawled property <b>ows_taxId_MetadataAllTagsInfo</b> to it.
