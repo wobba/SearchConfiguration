@@ -1,0 +1,117 @@
+<SearchConfigurationSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Portability">
+  <SearchQueryConfigurationSettings>
+    <SearchQueryConfigurationSettings>
+      <BestBets xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+      <DefaultSourceId>00000000-0000-0000-0000-000000000000</DefaultSourceId>
+      <DefaultSourceIdSet>true</DefaultSourceIdSet>
+      <DeployToParent>false</DeployToParent>
+      <DisableInheritanceOnImport>false</DisableInheritanceOnImport>
+      <QueryRuleGroups xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+      <QueryRules xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+      <ResultTypes xmlns:d4p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" />
+      <Sources xmlns:d4p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration.Query" />
+      <UserSegments xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+    </SearchQueryConfigurationSettings>
+  </SearchQueryConfigurationSettings>
+  <SearchRankingModelConfigurationSettings>
+    <RankingModels xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  </SearchRankingModelConfigurationSettings>
+  <SearchSchemaConfigurationSettings>
+    <Aliases xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+      <d3p1:LastItemName i:nil="true" />
+      <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </Aliases>
+    <CategoriesAndCrawledProperties xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+        <d3p1:Key>00130329-0000-0130-c000-000000131346</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+          <d5p1:LastItemName>ows_Article_x0020_Rank</d5p1:LastItemName>
+          <d5p1:dictionary>
+            <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+              <d3p1:Key>ows_HideFromDelve</d3p1:Key>
+              <d3p1:Value>
+                <d5p1:Name>ows_HideFromDelve</d5p1:Name>
+                <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                <d5p1:IsImplicit>false</d5p1:IsImplicit>
+                <d5p1:IsMappedToContents>false</d5p1:IsMappedToContents>
+                <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                <d5p1:MappedManagedProperties />
+                <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                <d5p1:Samples />
+                <d5p1:SchemaId>0</d5p1:SchemaId>
+              </d3p1:Value>
+            </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>            
+          </d5p1:dictionary>
+        </d3p1:Value>
+      </d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+    </CategoriesAndCrawledProperties>
+    <CrawledProperties xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" i:nil="true" />
+    <ManagedProperties xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+      <d3p1:LastItemName>HideFromDelve</d3p1:LastItemName>
+      <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d4p1:KeyValueOfstringManagedPropertyInfoy6h3NzC8>
+          <d4p1:Key>HideFromDelve</d4p1:Key>
+          <d4p1:Value>
+            <d3p1:Name>HideFromDelve</d3p1:Name>
+            <d3p1:Aliases i:nil="true" />
+            <d3p1:CompleteMatching>false</d3p1:CompleteMatching>
+            <d3p1:Context>0</d3p1:Context>
+            <d3p1:DeleteDisallowed>false</d3p1:DeleteDisallowed>
+            <d3p1:Description />
+            <d3p1:EnabledForScoping>false</d3p1:EnabledForScoping>
+            <d3p1:EntityExtractorBitMap>0</d3p1:EntityExtractorBitMap>
+            <d3p1:FullTextIndex i:nil="true" />
+            <d3p1:HasMultipleValues>false</d3p1:HasMultipleValues>
+            <d3p1:IndexOptions>0</d3p1:IndexOptions>
+            <d3p1:IsImplicit>false</d3p1:IsImplicit>
+            <d3p1:IsReadOnly>false</d3p1:IsReadOnly>
+            <d3p1:ManagedType>YesNo</d3p1:ManagedType>
+            <d3p1:MappedCrawledProperties i:nil="true" />
+            <d3p1:MappingDisallowed>false</d3p1:MappingDisallowed>
+            <d3p1:Pid>93402</d3p1:Pid>
+            <d3p1:Queryable>true</d3p1:Queryable>
+            <d3p1:Refinable>false</d3p1:Refinable>
+            <d3p1:RefinerConfiguration>
+              <d3p1:Anchoring>Auto</d3p1:Anchoring>
+              <d3p1:CutoffMaxBuckets>1000</d3p1:CutoffMaxBuckets>
+              <d3p1:Divisor>1</d3p1:Divisor>
+              <d3p1:Intervals>4</d3p1:Intervals>
+              <d3p1:Resolution>1</d3p1:Resolution>
+              <d3p1:Type>Deep</d3p1:Type>
+            </d3p1:RefinerConfiguration>
+            <d3p1:RemoveDuplicates>true</d3p1:RemoveDuplicates>
+            <d3p1:RespectPriority>false</d3p1:RespectPriority>
+            <d3p1:Retrievable>false</d3p1:Retrievable>
+            <d3p1:SafeForAnonymous>false</d3p1:SafeForAnonymous>
+            <d3p1:Searchable>false</d3p1:Searchable>
+            <d3p1:Sortable>false</d3p1:Sortable>
+            <d3p1:SortableType>Enabled</d3p1:SortableType>
+            <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+            <d3p1:UpdateGroup i:nil="true" />
+          </d4p1:Value>
+        </d4p1:KeyValueOfstringManagedPropertyInfoy6h3NzC8>
+      </d3p1:dictionary>
+      <d3p1:TotalCount>0</d3p1:TotalCount>
+    </ManagedProperties>
+    <Mappings xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+      <d3p1:LastItemName>00130329-0000-0130-c000-000000131346:ows_Article_x0020_Rank-&gt;1000000800</d3p1:LastItemName>
+      <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+          <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_HideFromDelve-&gt;93402</d4p1:Key>
+          <d4p1:Value>
+            <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_HideFromDelve-&gt;93402</d3p1:Name>
+            <d3p1:CrawledPropertyName>ows_HideFromDelve</d3p1:CrawledPropertyName>
+            <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+            <d3p1:ManagedPid>93402</d3p1:ManagedPid>
+            <d3p1:MappingOrder>100</d3p1:MappingOrder>
+            <d3p1:SchemaId>59284</d3p1:SchemaId>
+          </d4p1:Value>
+        </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+      </d3p1:dictionary>
+    </Mappings>
+    <Overrides xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+      <d3p1:LastItemName i:nil="true" />
+      <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </Overrides>
+  </SearchSchemaConfigurationSettings>
+</SearchConfigurationSettings>
