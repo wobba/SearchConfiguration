@@ -1,0 +1,58 @@
+<SearchConfigurationSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Portability">
+	<SearchQueryConfigurationSettings>
+		<SearchQueryConfigurationSettings>
+			<BestBets xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08"/>
+			<DefaultSourceId>00000000-0000-0000-0000-000000000000</DefaultSourceId>
+			<DefaultSourceIdSet>true</DefaultSourceIdSet>
+			<DeployToParent>false</DeployToParent>
+			<DisableInheritanceOnImport>false</DisableInheritanceOnImport>
+			<QueryRuleGroups xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08"/>
+			<QueryRules xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08"/>
+			<ResultTypes xmlns:d4p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration"/>
+			<Sources xmlns:d4p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration.Query"/>
+			<UserSegments xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08"/>
+		</SearchQueryConfigurationSettings>
+	</SearchQueryConfigurationSettings>
+	<SearchRankingModelConfigurationSettings>
+		<RankingModels xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+	</SearchRankingModelConfigurationSettings>
+	<SearchSchemaConfigurationSettings>
+		<Aliases xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+			<d3p1:LastItemName i:nil="true"/>
+			<d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+		</Aliases>
+		<CategoriesAndCrawledProperties xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+		<CrawledProperties xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+			<d3p1:LastItemName i:nil="true"/>
+			<d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+		</CrawledProperties>
+		<ManagedProperties xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+			<d3p1:LastItemName i:nil="true"/>
+			<d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+			<d3p1:TotalCount>0</d3p1:TotalCount>
+		</ManagedProperties>
+		<Mappings xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+			<d3p1:LastItemName i:nil="true"/>
+			<d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+		</Mappings>
+		<Overrides xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+			<d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+					<d4p1:Key>##PID##</d4p1:Key>
+					<d4p1:Value>
+						<d3p1:Name>##PID##</d3p1:Name>
+						<d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+						<d3p1:EntityExtractorBitMap>0</d3p1:EntityExtractorBitMap>
+						<d3p1:ExtraProperties i:nil="true"/>
+						<d3p1:ManagedPid>##PID##</d3p1:ManagedPid>
+						<d3p1:MappingsOverridden>false</d3p1:MappingsOverridden>
+						<d3p1:SchemaId>143692</d3p1:SchemaId>
+						<d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+					</d4p1:Value>
+				</d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+			</d3p1:dictionary>
+		</Overrides>
+	</SearchSchemaConfigurationSettings>
+	<SearchSubscriptionSettingsConfigurationSettings i:nil="true"/>
+	<SearchTaxonomyConfigurationSettings i:nil="true"/>
+</SearchConfigurationSettings>

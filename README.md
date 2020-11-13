@@ -1,6 +1,9 @@
 # SharePoint Sample Search Configurations
 SharePoint Sample Search Configurations
 
+   - <i>MapCrawledPropertyToManagedProperty.ps1</i>
+        - <i>SearchMappingTemplate.xml</i> template to map cp to mp
+        - <i>SearchMappingReset.xml</i> template to reset a cp mapping
    - <i>TagBoost-Max-SearchConfiguration.xml</i> - Boost equal to Title
    - <i>TagBoost-Medium-SearchConfiguration.xml</i> - Boost equal to SocialTag
    - <i>TagBoost-Low-SearchConfiguration.xml</i> - Boost equal to Body
@@ -8,6 +11,8 @@ SharePoint Sample Search Configurations
    - <i>HideFromDelveSchema.xml</i> - By using a Yes/No column named HideFromDelve in SharePoint you can omit them from the Delve board
 
 ## Description
+Samples on how to map crawled properties to managed properties, and how to set the context level boost for a managed property in order to impact the BM25F score in search.
+
 Any column which is of type managed metadata in SharePoint will get it's
 values boosted with this search schema update.
 
@@ -22,6 +27,8 @@ The different files are then associating the context level of <b>TabBoost</b> to
 
 ### Installation SharePoint Online
 The files can be imported as search configurations files. For SharePoint Online do this at the tentant level from https://tenant-admin.sharepoint.com/_layouts/15/searchadmin/importsearchconfiguration.aspx?level=tenant
+
+You can also import config files using the `Set-PnPSearchConfiguration` cmdlet.
 
 ### Installation SharePoint 2013 - On-premises
 
