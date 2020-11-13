@@ -125,7 +125,11 @@ if ($crawledProperty.Length -eq 0) {
     $config = Get-Content -Path "$scriptDir\SearchMappingReset.xml" -Raw
 }
 else {
-    Write-Host "Mapping crawled property $crawledProperty to managed property $managedProperty"
+    if($appendToExistingMapping) {
+        Write-Host "Appending crawled property $crawledProperty to managed property $managedProperty"
+    } else {
+        Write-Host "Replacing crawled property $crawledProperty to managed property $managedProperty"
+    }    
     $config = Get-Content -Path "$scriptDir\SearchMappingTemplate.xml" -Raw
 }
 
