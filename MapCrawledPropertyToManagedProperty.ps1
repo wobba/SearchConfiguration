@@ -18,7 +18,9 @@ param (
     [Parameter(Mandatory = $true)]
     [string]$managedProperty,    
     [string]$crawledProperty,
-    [bool]$appendToExistingMapping = $true
+    [bool]$appendToExistingMapping = $true,
+    [bool]$interactiveLogin = $false,
+    [bool]$printConfig = $false
 )
 
 
@@ -52,7 +54,11 @@ function Load-Module ($m) {
 
 Load-Module "SharePointPnPPowerShellOnline"
 
-Connect-PnPOnline -Url $siteUrl -UseWebLogin
+if( $interactiveLogin ) {
+    Connect-PnPOnline -Url $siteUrl -UseWebLogin
+} else {
+    Connect-PnPOnline -Url $siteUrl
+}
 
 $validNames = @("Int", "Date", "Decimal", "Double", "RefinableInt", "RefinableDate", "RefinableDateSingle", "RefinableDateInvariant", "RefinableDecimal", "RefinableDecimal", "RefinableString");
 
@@ -76,7 +82,7 @@ if ($mp.Matches.Length -eq 0) {
 $mpNumber = $mp.Matches[0].Groups['num'].Value
 
 $basePid = 0;
-if ($managedProperty -match "^RefinableString1") {
+if ($managedProperty -match "^RefinableString1" -and $mpNumber.length -eq 3 ) {
     $basePid = 1000000900
     $mpNumber = $mpNumber - 100;
 }
@@ -136,6 +142,11 @@ else {
 $config = $config -replace "##PID##", $mpPid
 $config = $config -replace "##CPNAME##", $crawledProperty
 $config = $config -replace "##APPEND##", $appendToExistingMapping.ToString().ToLower()
+
+if($printConfig) {
+    $config
+    return
+}
 
 if ($siteUrl -like "*-admin*") {
     Set-PnPSearchConfiguration -Scope Subscription -Configuration $config
