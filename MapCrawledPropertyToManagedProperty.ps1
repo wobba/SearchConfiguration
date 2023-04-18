@@ -52,7 +52,7 @@ function Load-Module ($m) {
     }
 }
 
-Load-Module "SharePointPnPPowerShellOnline"
+Load-Module "PnP.PowerShell"
 
 if( $interactiveLogin ) {
     Connect-PnPOnline -Url $siteUrl -UseWebLogin
