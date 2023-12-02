@@ -7,7 +7,7 @@ SharePoint Sample Search Configurations
    - <i>TagBoost-Max-SearchConfiguration.xml</i> - Boost equal to Title
    - <i>TagBoost-Medium-SearchConfiguration.xml</i> - Boost equal to SocialTag
    - <i>TagBoost-Low-SearchConfiguration.xml</i> - Boost equal to Body
-   - <i>CrawlTimeSchema.xml</i> - Add CrawlTime managed property to see when an item was last crawled
+   - <i>CrawlTimeSchema.xml</i> - Add CrawlTime managed property to see when an item was last crawled (only on-prem)
    - <i>HideFromDelveSchema.xml</i> - By using a Yes/No column named HideFromDelve in SharePoint you can omit them from the Delve board
 
 ## Description
