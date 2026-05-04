@@ -4,6 +4,7 @@ SharePoint Sample Search Configurations
    - <i>MapCrawledPropertyToManagedProperty.ps1</i>
         - <i>SearchMappingTemplate.xml</i> template to map cp to mp
         - <i>SearchMappingReset.xml</i> template to reset a cp mapping
+   - <i>ResetManagedProperty.ps1</i> - Reset any managed property (including built-in ones like Title) by looking up its PID from the tenant search configuration
    - <i>TagBoost-Max-SearchConfiguration.xml</i> - Boost equal to Title
    - <i>TagBoost-Medium-SearchConfiguration.xml</i> - Boost equal to SocialTag
    - <i>TagBoost-Low-SearchConfiguration.xml</i> - Boost equal to Body
@@ -19,6 +20,20 @@ values boosted with this search schema update.
 For a detailed description of when and how to use these files check out [How to: Boost metadata in SharePoint search results]
 
 [How to: Boost metadata in SharePoint search results]:http://techmikael.blogspot.com/2015/01/how-to-boost-metadata-in-sharepoint.html.
+
+## Authentication
+Both `MapCrawledPropertyToManagedProperty.ps1` and `ResetManagedProperty.ps1` require a `-clientId` parameter (or an `ENTRAID_CLIENT_ID` / `ENTRAID_APP_ID` environment variable). Register an app using `Register-PnPEntraIDApp` — see https://pnp.github.io/powershell/articles/registerapplication.html for details.
+
+Use `-interactiveLogin $true` to authenticate interactively (supports MFA).
+
+### Reset managed property example
+```powershell
+# Reset the Title managed property at tenant level
+.\ResetManagedProperty.ps1 -siteUrl https://tenant-admin.sharepoint.com -managedProperty Title -clientId <your-client-id> -interactiveLogin $true
+
+# Preview the reset XML without applying
+.\ResetManagedProperty.ps1 -siteUrl https://tenant-admin.sharepoint.com -managedProperty Title -clientId <your-client-id> -printConfig $true
+```
 
 ### Technical implementation
 The search configuration file is creating a new managed property named <b>TagBoost</b>, mapping the catch-all crawled property <b>ows_taxId_MetadataAllTagsInfo</b> to it.

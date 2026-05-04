@@ -18,6 +18,7 @@ param (
     [Parameter(Mandatory = $true)]
     [string]$managedProperty,    
     [string]$crawledProperty,
+    [string]$clientId,
     [bool]$appendToExistingMapping = $true,
     [bool]$interactiveLogin = $false,
     [bool]$printConfig = $false
@@ -54,11 +55,16 @@ function Load-Module ($m) {
 
 Load-Module "PnP.PowerShell"
 
-if( $interactiveLogin ) {
-    Connect-PnPOnline -Url $siteUrl -UseWebLogin
-} else {
-    Connect-PnPOnline -Url $siteUrl
+if ($clientId.Length -eq 0 -and $null -eq $env:ENTRAID_CLIENT_ID -and $null -eq $env:ENTRAID_APP_ID) {
+    Write-Warning "A -clientId parameter or ENTRAID_CLIENT_ID environment variable is required."
+    Write-Warning "Register an app using Register-PnPEntraIDApp. See https://pnp.github.io/powershell/articles/registerapplication.html"
+    return
 }
+
+$connectParams = @{ Url = $siteUrl }
+if ($clientId.Length -ne 0) { $connectParams.ClientId = $clientId }
+if ($interactiveLogin) { $connectParams.Interactive = $true }
+Connect-PnPOnline @connectParams
 
 $validNames = @("Int", "Date", "Decimal", "Double", "RefinableInt", "RefinableDate", "RefinableDateSingle", "RefinableDateInvariant", "RefinableDecimal", "RefinableDecimal", "RefinableString");
 
@@ -131,9 +137,10 @@ if ($crawledProperty.Length -eq 0) {
     $config = Get-Content -Path "$scriptDir\SearchMappingReset.xml" -Raw
 }
 else {
-    if($appendToExistingMapping) {
+    if ($appendToExistingMapping) {
         Write-Host "Appending crawled property $crawledProperty to managed property $managedProperty"
-    } else {
+    }
+    else {
         Write-Host "Replacing crawled property $crawledProperty to managed property $managedProperty"
     }    
     $config = Get-Content -Path "$scriptDir\SearchMappingTemplate.xml" -Raw
@@ -143,7 +150,7 @@ $config = $config -replace "##PID##", $mpPid
 $config = $config -replace "##CPNAME##", $crawledProperty
 $config = $config -replace "##APPEND##", $appendToExistingMapping.ToString().ToLower()
 
-if($printConfig) {
+if ($printConfig) {
     $config
     return
 }
