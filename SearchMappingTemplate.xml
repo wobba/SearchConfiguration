@@ -38,7 +38,7 @@
 								<d5p1:MappedManagedProperties/>
 								<d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
 								<d5p1:Samples/>
-								<d5p1:SchemaId>143692</d5p1:SchemaId>
+								<d5p1:SchemaId>##SCHEMAID##</d5p1:SchemaId>
 							</d3p1:Value>
 						</d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
 					</d5p1:dictionary>
@@ -64,7 +64,7 @@
 						<d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
 						<d3p1:ManagedPid>##PID##</d3p1:ManagedPid>
 						<d3p1:MappingOrder>100</d3p1:MappingOrder>
-						<d3p1:SchemaId>143692</d3p1:SchemaId>
+						<d3p1:SchemaId>##SCHEMAID##</d3p1:SchemaId>
 					</d4p1:Value>
 				</d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
 			</d3p1:dictionary>
@@ -80,7 +80,7 @@
 						<d3p1:ExtraProperties i:nil="true"/>
 						<d3p1:ManagedPid>##PID##</d3p1:ManagedPid>
 						<d3p1:MappingsOverridden>##APPEND##</d3p1:MappingsOverridden>
-						<d3p1:SchemaId>143692</d3p1:SchemaId>
+						<d3p1:SchemaId>##SCHEMAID##</d3p1:SchemaId>
 						<d3p1:TokenNormalization>true</d3p1:TokenNormalization>
 					</d4p1:Value>
 				</d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>

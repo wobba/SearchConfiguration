@@ -46,7 +46,7 @@
 						<d3p1:ExtraProperties i:nil="true"/>
 						<d3p1:ManagedPid>##PID##</d3p1:ManagedPid>
 						<d3p1:MappingsOverridden>false</d3p1:MappingsOverridden>
-						<d3p1:SchemaId>143692</d3p1:SchemaId>
+						<d3p1:SchemaId>##SCHEMAID##</d3p1:SchemaId>
 						<d3p1:TokenNormalization>true</d3p1:TokenNormalization>
 					</d4p1:Value>
 				</d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
