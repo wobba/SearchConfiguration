@@ -71,7 +71,7 @@ function Get-LegacyManagedPropertyPid ([string]$managedPropertyName, [string]$mp
         $basePid = 1000000660
     }
     elseif ($managedPropertyName -match "^RefinableDateSingle") {
-        $basePid = 1000000660
+        $basePid = 1000000650
     }
     elseif ($managedPropertyName -match "^RefinableDate") {
         $basePid = 1000000600
